@@ -1,0 +1,88 @@
+.intro {
+    background-color: transparent;
+
+    .nav {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-white);
+        height: 10px;
+        -webkit-box-shadow: 0 5px 6px -6px var(--color-shadow);
+        -moz-box-shadow: 0 5px 6px -6px var(--color-shadow);
+        box-shadow: 0 5px 6px -6px var(--color-shadow);
+
+        .options {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 60px;
+            background-color: var(--color-white);
+            border-radius: 3px 3px 0 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            @include respond(tab-portrait){
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .option {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                color: var(--color-background);
+                height: 60px;
+                cursor: pointer;
+                flex: 1;
+                line-height: 60px;
+                text-align: center;
+                text-decoration: none;
+                overflow: hidden;
+                
+                &.active,
+                &:hover {
+                    background-color: var(--color-background);
+                    color: var(--color-white);
+                }
+    
+                @include respond(tab-portrait){
+                    font-size: .9rem;
+                }
+
+                
+            }
+        }
+
+        &.sticky {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            background-color: var(--color-white);
+            height: 60px;
+
+            @include respond(tab-portrait){
+                padding: 0;
+            }
+
+            .options {
+                bottom: 0px;
+                border-radius: 0;
+
+                .option {
+                    height: 60px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+.sticky + section {
+    padding-top: 60px;
+}

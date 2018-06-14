@@ -1,0 +1,92 @@
+section.intro {
+    .background {
+        background-image: url('/images/photo-1517245386807-bb43f82c33c4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .info {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+
+        .subtitle {
+            font-size: 1.8rem;
+            color: var(--color-white);
+            font-weight: 400;
+
+            &.top {
+                margin-bottom: 2rem;
+            }
+
+            &.bottom {
+                margin-top: 2rem;
+            }
+
+            @include respond(tab-portrait){
+                font-size: 1.5rem;
+            }
+        }
+
+        .title {
+            font-size: 11.6rem;
+            color: var(--color-white);
+            text-transform: uppercase;
+            font-weight: 200;
+            
+            &.alt {
+                font-weight: 700;
+            }
+
+            span {
+                font-weight: 200;
+            }
+
+            @include respond(tab-portrait){
+                font-size: 4rem;
+            }
+        }
+
+        .social-buttons {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 25%;
+
+            @include respond(tab-portrait){
+                padding: 0;
+            }
+
+            div {
+                margin-top: 1rem;
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: var(--color-white);
+                border: 2px solid var(--color-white);
+                padding: 5px 25px;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: transform ease 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: var(--color-background);
+                    border: 2px solid var(--color-background);
+                    background-color: var(--color-white);
+                }
+            }
+        }
+    }
+}
