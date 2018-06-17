@@ -21,12 +21,17 @@
             width: 50%;
             height: 60px;
             background-color: var(--color-white);
-            border-radius: 3px 3px 0 0;
+            border-radius: 5px 5px 0 0;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+
+            @include respond(tab-landscape) {
+                transform: translateX(-50%);
+                width: 70%;
+            }
 
             @include respond(tab-portrait){
                 width: 100%;
@@ -44,18 +49,37 @@
                 text-align: center;
                 text-decoration: none;
                 overflow: hidden;
+                position: relative;
+                transition: color ease 0.3s;
                 
                 &.active,
                 &:hover {
-                    background-color: var(--color-background);
                     color: var(--color-white);
+
+                    &::before {
+                        transform: translateY(0);
+                        border-radius: 0;
+                    }
                 }
     
                 @include respond(tab-portrait){
                     font-size: .9rem;
                 }
 
-                
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--color-background);
+                    z-index: -1;
+                    transform: translateY(100%);
+                    transition: all ease 0.3s;
+                    border-radius: 100%;
+                }
             }
         }
 
