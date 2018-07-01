@@ -9,6 +9,10 @@
             padding: 10px 20px;
             border: 1px solid var(--color-background);
             border-radius: 5px;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 
@@ -33,8 +37,13 @@
         resize: none;
         border: 1px solid var(--color-background);
         border-radius: 5px;
+
+        &:focus {
+            outline: none;
+        }
     }
 
+    &_send_confirm,
     &_send {
         border: 1px solid var(--color-background);
         width: 50%;
@@ -44,6 +53,13 @@
         margin: 0 auto;
         margin-top: 10px;
         padding: 5px 0;
+        cursor: pointer;
+    }
+
+    &_send_confirm {
+        color: #03BD5B;
+        border: 1px solid #03BD5B;
+        display: none;
     }
 
     .alt-contact {
@@ -51,6 +67,9 @@
             width: 100%;
             text-align: center;
             padding: 25px 0;
+        }
+        .email strong {
+            color: var(--color-background);
         }
     }
 }

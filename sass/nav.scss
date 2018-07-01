@@ -3,29 +3,18 @@
 
     .nav {
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        background-color: var(--color-white);
-        height: 10px;
-        -webkit-box-shadow: 0 5px 6px -6px var(--color-shadow);
-        -moz-box-shadow: 0 5px 6px -6px var(--color-shadow);
-        box-shadow: 0 5px 6px -6px var(--color-shadow);
 
         .options {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50%;
+            width: 100%;
             height: 60px;
-            background-color: var(--color-white);
-            border-radius: 5px 5px 0 0;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
 
             @include respond(tab-landscape) {
@@ -41,32 +30,39 @@
             .option {
                 font-size: 1.8rem;
                 text-transform: uppercase;
-                color: var(--color-background);
-                height: 60px;
+                color: var(--color-white);
+                height: calc(60px - 2px);
                 cursor: pointer;
-                flex: 1;
                 line-height: 60px;
                 text-align: center;
                 text-decoration: none;
                 overflow: hidden;
                 position: relative;
-                transition: color ease 0.3s;
+                transition: all ease 0.1s;
+                margin: 0 25px;
+                font-weight: 200;
+
+                &.contact {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
                 
                 &.active,
                 &:hover {
-                    color: var(--color-white);
+                    box-shadow: 0px 2px 0px 0px var(--color-white);
 
-                    &::before {
+                    /*&::before {
                         transform: translateY(0);
                         border-radius: 0;
-                    }
+                    }*/
                 }
     
                 @include respond(tab-portrait){
                     font-size: .9rem;
                 }
 
-                &::before {
+                /*&::before {
                     content: '';
                     display: block;
                     position: absolute;
@@ -79,7 +75,7 @@
                     transform: translateY(100%);
                     transition: all ease 0.3s;
                     border-radius: 100%;
-                }
+                }*/
             }
         }
 
@@ -101,6 +97,35 @@
                 .option {
                     height: 60px;
                     line-height: 60px;
+                    color: var(--color-background);
+                    flex: 1;
+                    max-width: 200px;
+
+                    &.active,
+                    &:hover {
+                        box-shadow: none;
+                        color: var(--color-white);
+
+                        &::before {
+                            transform: translateY(0);
+                            border-radius: 0;
+                        }
+                    }
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: var(--color-background);
+                        z-index: -1;
+                        transform: translateY(100%);
+                        transition: all ease 0.3s;
+                        border-radius: 100%;
+                    }
                 }
             }
         }

@@ -20,24 +20,28 @@
     <!--build:css css/styles.min.css-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/brands.css" integrity="sha384-t3MQUMU0g3tY/0O/50ja6YVaEFYwPpOiPbrHk9p5DmYtkHJU2U1/ujNhYruOJwcj"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-LDuQaX4rOgqi4rbWCyWj3XVBlgDzuxGy/E6vWN6U7c25/eSJIwyKhy9WgZCHQWXz"
-        crossorigin="anonymous">
     <!--endbuild-->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/light.css" integrity="sha384-ANTAgj8tbw0vj4HgQ4HsB886G2pH15LXbruHPCBcUcaPAtn66UMxh8HQcb1cH141"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-C1HxUFJBptCeaMsYCbPUw8fdL2Cblu3mJZilxrfujE+7QLr8BfuzBl5rPLNM61F6"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-PnWzJku7hTqk2JREATthkLpYeVVGcBbXG5yEzk7hD2HIr/VxffIDfNSR7p7u4HUy"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <section class="intro">
-        <div class="background"></div>
+    <section class="intro full">
+        <!-- <div class="background"></div> -->
         <div class="info">
-            <div class="subtitle top">Hello, my name is Yash Zolmajdi and I'm a</div>
+            <div class="subtitle top">Hello, my name is
+                <strong>Yash Zolmajdi</strong> and I'm a</div>
             <div class="title">full stack</div>
             <div class="title alt">
                 <span>&lt; </span>developer
                 <span> /&gt;</span>
             </div>
-            <div class="subtitle bottom">I creat progressive web applications and APIs</div>
+            <div class="subtitle bottom">C# | Nodejs | ReactJS | .NET | AngularJS | VueJS</div>
             <div class="social-buttons">
                 <div>
                     <i class="fab fa-twitter"></i> Twitter</div>
@@ -52,68 +56,92 @@
                 <a class="option" href="#about">About me</a>
                 <a class="option" href="#skills">skills</a>
                 <a class="option" href="#projects">projects</a>
-                <a class="option" href="#contact">contact me</a>
+                <a class="option contact" href="#contact">contact</a>
+            </div>
+        </div>
+        <div class="flint">
+            <div class="down-arrow">
+                <i class="fal fa-chevron-down"></i>
             </div>
         </div>
     </section>
     <section id="about">
-        <div class="article">
+        <div class="article" data-aos="fade-up">
             <div class="body">
+                <h1>
+                    <span>&lt;</span> About Me
+                    <span>/&gt;</span>
+                </h1>
                 My name is Yashar Zolmajdi and I am a passionate web designer who specializes in creating dynamic and beautiful web pages.
                 I have been in the field for nearly 3 years, and have been loving every minute of it. I am a blogger, entrepreneur,
                 designer, developer, and overall thinker. Check out some of the projects below to see what I've been up to
                 lately.
             </div>
         </div>
-        <div class="article">
-            <h1><span>&lt;</span> Education <span>/&gt;</span></h1>
-            <div class="body">
-                <div class="points">
-                    <div>Masters of Information Communication Technology</div>
-                    <div class="alt">Western Sydney University (2017-Present)</div>
+    </section>
+    <section id="info-skills" class="infos bottom-flint top-flint bgColor">
+        <div class="flint top"></div>
+        <div class="article flex center">
+            <div class="info-item" data-aos="fade-right">
+                <div class="icon">
+                    <i class="fal fa-vial"></i>
                 </div>
-                <div class="points">
-                    <div>Bachelor of Information Communication Technology</div>
-                    <div class="alt">Western Sydney University (2012-2016)</div>
+                <div class="name title">RESEARCH</div>
+            </div>
+            <div class="info-item" data-aos="fade">
+                <div class="icon">
+                    <i class="fal fa-drafting-compass"></i>
                 </div>
+                <div class="name title">DESIGN</div>
+            </div>
+            <div class="info-item" data-aos="fade-left">
+                <div class="icon">
+                    <i class="fal fa-code"></i>
+                </div>
+                <div class="name title">DEVELOP</div>
             </div>
         </div>
-        <div class="article">
-            <h1><span>&lt;</span> Work Experience <span>/&gt;</span></h1>
-            <div class="body">
-                <div class="points">
-                    <div>Plutora</div>
-                    <div class="alt">Full Stack developer (2015-Present)</div>
+        <div class="flint"></div>
+    </section>
+    <section id="education" class="infos">
+        <div class="article flex center">
+            <div class="info-item" data-aos="fade-right">
+                <div class="icon bgColor">
+                    <i class="fal fa-graduation-cap"></i>
                 </div>
-                <div class="points">
-                    <div>Good Painting Pty. Ltd.</div>
-                    <div class="alt">I.T. Specialist (2015-2015)</div>
-                </div>
-                <div class="points">
-                    <div>Goals A+N</div>
-                    <div class="alt">I.T. Specialist (2014-2015)</div>
-                </div>
-                <div class="points">
-                    <div>Agate I.T</div>
-                    <div class="alt">System Administrator (2014-2014)</div>
+                <div class="name small">
+                    <div>
+                        <strong>Masters</strong>
+                    </div>
+                    <div>Information Communication Technolog</div>
+                    <div class="alt">2017 - Present</div>
                 </div>
             </div>
-        </div>
-        <div class="article">
-            <h1><span>&lt;</span> Languages <span>/&gt;</span></h1>
-            <div class="body">
-                <div class="points">
-                    <div>English</div>
+            <h1 data-aos="fade">
+                <span>&lt;</span> Education
+                <span>/&gt;</span>
+            </h1>
+            <div class="info-item" data-aos="fade-left">
+                <div class="icon bgColor">
+                    <i class="fal fa-graduation-cap"></i>
                 </div>
-                <div class="points">
-                    <div>Persian</div>
+                <div class="name small">
+                    <div>
+                        <strong>Bachelor</strong>
+                    </div>
+                    <div>Information Communication Technolog</div>
+                    <div class="alt">2012 - 2016</div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="skills" class="skills">
-        <div class="article">
-            <h1><span>&lt;</span> skills <span>/&gt;</span></h1>
+    <section id="skills" class="skills bottom-flint top-flint bgColor">
+        <div class="flint top"></div>
+        <div class="article" data-aos="fade-up">
+            <h1>
+                <span>&lt;</span> skills
+                <span>/&gt;</span>
+            </h1>
             <div class="body">
                 <div id="skillContainer">
                     <canvas width="500" height="500" id="skillCanvas" class="skillCanvas">
@@ -194,7 +222,7 @@
                                 <a href="#skills">Gulp</a>
                             </li>
                             <li>
-                                <a href="#skills">Vuew.js</a>
+                                <a href="#skills">Vue.js</a>
                             </li>
                             <li>
                                 <a href="#skills">Angular JS</a>
@@ -222,10 +250,14 @@
                 </div>
             </div>
         </div>
+        <div class="flint"></div>
     </section>
-    <section id="projects" class="projects">
-        <div class="article">
-            <h1><span>&lt;</span> projects <span>/&gt;</span></h1>
+    <!-- <section id="projects" class="projects">
+        <div class="article" data-aos="fade-up">
+            <h1>
+                <span>&lt;</span> projects
+                <span>/&gt;</span>
+            </h1>
             <div class="body">
                 <div class="projects_container">
                     <div class="projects_item">
@@ -246,26 +278,41 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section id="contact" class="contact">
-            <div class="article">
-                <h1><span>&lt;</span> contact me <span>/&gt;</span></h1>
-                <div class="body">
-                    <div class="contact_top">
-                        <div class="input"><input type="text" placeholder="Name"></div>
-                        <div class="input"><input type="text" placeholder="Email"></div>
+        <div class="article" data-aos="fade-up">
+            <h1>
+                <span>&lt;</span> contact me
+                <span>/&gt;</span>
+            </h1>
+            <div class="body">
+                <div class="contact_top">
+                    <div class="input">
+                        <input type="text" placeholder="Name">
                     </div>
-                    <div class="input"><input type="text" placeholder="Subject"></div>
-                    <div class="input"><textarea placeholder="Message" rows="10"></textarea></div>
-                    <div class="contact_send">send</div>
-                    <div class="alt-contact">
-                        <div class="or">OR</div>
-                        <div class="email">Email me on <strong>yash.zolmajdi@gmail.com</strong></div>
+                    <div class="input">
+                        <input type="text" placeholder="Email">
+                    </div>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="input">
+                    <textarea placeholder="Message" rows="10"></textarea>
+                </div>
+                <div class="contact_send" id="sendEmail">send</div>
+                <div class="contact_send_confirm" id="confirmEmail">Email Sent!</div>
+                <div class="alt-contact">
+                    <div class="or">OR</div>
+                    <div class="email">Email me on
+                        <strong>yash.zolmajdi@gmail.com</strong>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!--build:js js/main.min.js -->
+    <script src="js/aos/aos.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/tagcanvas.min.js"></script>
     <script src="js/index.js"></script>
